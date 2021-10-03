@@ -1,0 +1,10 @@
+{
+    "name": "自動勤怠システム",
+    "manifest_version" : 2,
+    "version": "1.0.0.3",
+    "description": "king of timeで勤怠ボタンを押すと、自動的にslackでメッセージを打つ",
+    "content_scripts": [{
+        "matches": ["https://s2.kingtime.jp/independent/recorder/personal/"],
+        "js": ["main.js", "parameter.js"]
+    }]
+}
